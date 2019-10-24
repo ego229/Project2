@@ -1,0 +1,12 @@
+<h1>Create New Product</h1>
+
+<form action="/product" method="POST">
+     <input type="text" name="name" placeholder="name" value="{{singleProduct.name}}"/>
+    <input type="text" name="version" placeholder="version" value="{{singleProduct.version}}"/>
+    <input type="text" name="model" placeholder="model" value="{{singleProduct.model}}"/>
+    <input type="hidden" name="electronicId" placeholder="model" value="{{electronicId}}"/>
+
+
+
+    <input type="submit" value="Create"/>
+</form>

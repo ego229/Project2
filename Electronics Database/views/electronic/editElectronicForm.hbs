@@ -1,0 +1,7 @@
+<h1>Edit Electronic</h1>
+
+<form action="/electronic/{{singleElectronic._id}}?_method=PUT" method="POST">
+    <input type="text" name="name" placeholder="name" value="{{singleElectronic.name}}"/>
+    <input type="text" name="type" placeholder="type" value="{{singleElectronic.type}}"/>
+    <input type="submit" value="Save"/>
+</form>

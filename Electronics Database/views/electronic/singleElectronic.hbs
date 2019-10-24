@@ -1,0 +1,27 @@
+<h1>{{singleElectronic.name}}</h1>
+
+
+<p>Type: {{singleElectronic.type}}</p>
+
+
+{{#each electronicProducts}}
+    <p>{{name}}</p>
+    <img src="{{picture}}" height="250"/>
+{{/each}}
+
+<a href="/electronic/edit/{{singleElectronic._id}}">
+    <button>
+    Edit Electronic
+    </button>
+</a>
+
+<a href="/product/new/{{singleElectronic._id}}">
+    <button>
+    Create Product For Electronic
+    </button>
+</a>
+
+<form action="/electronic/{{singleElectronic._id}}?_method=DELETE" method="POST">
+    <input type="submit" value="Delete Electronic"/>
+</form>
+

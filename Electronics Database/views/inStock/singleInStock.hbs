@@ -1,0 +1,23 @@
+<h1>{{singleInStock.name}}</h1>
+
+
+
+<p>Version: {{singleInStock.version}}</p>
+<p>Modle: {{singleInStock.model}}</p>
+
+<p>Picture:
+     {{#if singleInStock.picture}}
+        <img src="{{singleInStock.picture}}" height=250/>
+    {{/if}}
+</p>
+
+<a href="/inStock/edit/{{singleInStock._id}}">
+    <button>
+    Edit InStock
+    </button>
+</a>
+
+
+<form action="/inStock/{{singleInStock._id}}?_method=DELETE" method="POST">
+    <input type="submit" value="Delete InStock"/>
+</form>

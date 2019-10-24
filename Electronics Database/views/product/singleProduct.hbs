@@ -1,0 +1,23 @@
+<h1>{{singleProduct.name}}</h1>
+
+
+
+<p>Version: {{singleProduct.version}}</p>
+<p>Modle: {{singleProduct.model}}</p>
+
+<p>Picture:
+     {{#if singleProduct.picture}}
+        <img src="{{singleProduct.picture}}" height=250/>
+    {{/if}}
+</p>
+
+<a href="/product/edit/{{singleProduct._id}}">
+    <button>
+    Edit Product
+    </button>
+</a>
+
+
+<form action="/product/{{singleProduct._id}}?_method=DELETE" method="POST">
+    <input type="submit" value="Delete Product"/>
+</form>

@@ -1,0 +1,17 @@
+<h1>All InStock</h1>
+
+<a href="/inStock/new">
+    <button>
+        Create New InStock
+    </button>
+</a> 
+
+{{#each allInStock}}
+    <a href="/inStock/{{_id}}">
+        <p>{{name}}</p>
+
+        {{#if picture}}
+            <img src={{picture}} height=250 width="auto"/>
+        {{/if}}
+    </a>
+{{/each}}

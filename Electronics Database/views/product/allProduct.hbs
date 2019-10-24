@@ -1,0 +1,17 @@
+<h1>All Products</h1>
+
+<a href="/product/new">
+    <button>
+        Create New Product
+    </button>
+</a>
+
+{{#each allProducts}}
+    <a href="/product/{{_id}}">
+        <p>{{name}}</p>
+
+        {{#if picture}}
+            <img src={{picture}} height=250 width="auto"/>
+        {{/if}}
+    </a>
+{{/each}}

@@ -1,0 +1,13 @@
+<h1>All Electronics</h1>
+
+<a href="/electronic/new">
+    <button>
+        Create New Electronic
+    </button>
+</a>
+
+{{#each allElectronics}}
+    <a href="/electronic/{{_id}}">
+        <p>{{name}}</p>
+    </a>
+{{/each}}
