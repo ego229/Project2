@@ -10,4 +10,4 @@ The below diagram outlines the ERD for the app
 ![Electronic Schema](https://user-images.githubusercontent.com/27642943/67531568-2d2b1600-f691-11e9-952a-2f9e6184c021.jpg)
 
 
-The app is deployed on the Heroku server at https://electronics-p2.herokuapp.com/product
+The app is deployed on the Heroku server at https://electronics-p2.herokuapp.com/electronic
