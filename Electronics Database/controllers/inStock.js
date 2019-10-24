@@ -17,15 +17,16 @@ inStockRouter.get('/inStock/edit/:id', (req, res) => {
     .then((singleinStock) => {
       res.render('inStock/editinStockForm', {singleinStock})
     })
+    .catch(res.send)
   
 })
 
 // getAll
 inStockRouter.get('/inStock', (req, res) => {
   inStockApi.getAllinStock()
-    .then((allinStock) => {
+    .then((allInStock) => {
       //res.json(allinStocks)
-      res.render('inStock/allinStock', {allinStock})
+      res.render('inStock/allinStock', {allInStock})
     })
      
 })
@@ -53,6 +54,7 @@ inStockRouter.post('/inStock', (req, res) => {
     .then((createdinStock) => {
       res.redirect("/inStock")
     })
+    .catch(res.send)
      
 })
 // delete

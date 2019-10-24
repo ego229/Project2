@@ -2,10 +2,7 @@ const mongoose = require('./connection.js')
 
 const InStockSchema = new mongoose.Schema({
     name: String,
-    
-
-
- inStockId: mongoose.ObjectId,
+    //inStockId: mongoose.ObjectId,
 })
 
 const inStockCollection = mongoose.model('inStock', InStockSchema)
