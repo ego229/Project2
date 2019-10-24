@@ -7,7 +7,7 @@ If you are starting a new project do the following:
 1. copy/download this directory to where you new project is located and rename
    it to the name of your project.
 1. change your directory (`cd`) into the copied project template
-1. `npm install`
+1. `npm install` 
 1. `node ./server.js`
 1. In a new terminal run `curl localhost:3000/helloworld`. You should see
    `hello world!` as the output. From there your server template works!
