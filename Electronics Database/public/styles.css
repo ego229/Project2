@@ -2,7 +2,7 @@ html {
   display: flex;
   justify-content: center;
   font-size: 30px;
-  color:greenyellow ;
+  color:rgb(123, 124, 121) ;
   background: url("./nun.jpg") no-repeat;
   height: 100%;
   background-size: cover;
