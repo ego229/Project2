@@ -4,7 +4,7 @@ This project is a full stack app that uses three schemas in the Model architectu
 
 
 
-
+SNAP SHOTS OF APP
 
 ![CREATE ELEC](https://user-images.githubusercontent.com/27642943/67531526-0e2c8400-f691-11e9-97a2-b5c430c9f194.jpg)
 
